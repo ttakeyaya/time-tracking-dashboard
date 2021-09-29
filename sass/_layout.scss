@@ -1,0 +1,210 @@
+.main {
+  max-width: 100%;
+  margin: 2vw;
+
+  .dashboard {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 259px 259px;
+    @media screen and (max-width: 852px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 20.3rem);
+      row-gap: 1.5rem 0;
+    }
+    &__card {
+      cursor: pointer;
+      animation: fadeIn 1s ease-in-out 0s 1 normal;
+      position: relative;
+      .card-img {
+        text-align: right;
+        border-radius: 1.5rem;
+        padding-right: 1rem;
+        width: 100%;
+        overflow: hidden;
+        &__img {
+          transform: translateY(-10%);
+        }
+      }
+
+      .card-content {
+        padding-bottom: 0.7rem;
+        padding-left: 3rem;
+        transform: translateY(-14%);
+        border-radius: 1.5rem;
+        color: white;
+        background-color: var(--color-dark-blue);
+        @media screen and (max-width: 852px) {
+          transform: translateY(-33%);
+          padding-bottom: 1rem;
+        }
+        //styling purpose
+        &.card-content-Social {
+          transform: translateY(-28%);
+        }
+        &.card-content-Exercise {
+          transform: translateY(-6%);
+        }
+        // ******************************
+        .title-container {
+          padding-top: 3rem;
+          padding-right: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .ellipsis {
+            cursor: pointer;
+          }
+        }
+        .timeframe-container {
+          @media screen and (max-width: 852px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 0.8rem;
+            padding-bottom: 2.8rem;
+          }
+        }
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+
+      &__timeframe {
+        font-weight: 300;
+        padding-top: 2.4rem;
+        font-size: 5.6rem;
+        @media screen and (max-width: 852px) {
+          font-size: 3.2rem;
+          padding: 0;
+        }
+      }
+      &__previous {
+        padding: 0.8rem 0 3.2rem 0;
+        color: var(--color-pale-blue);
+        font-size: 1.5rem;
+        @media screen and (max-width: 852px) {
+          padding: 0;
+          padding-left: 7rem;
+        }
+      }
+    }
+    // style indivisual card
+    .work-card {
+      .card-img {
+        background-color: var(--color-work);
+      }
+    }
+    .play-card {
+      .card-img {
+        background-color: var(--color-play);
+      }
+    }
+    .study-card {
+      .card-img {
+        background-color: var(--color-study);
+      }
+    }
+    .exercise-card {
+      .card-img {
+        background-color: var(--color-exercise);
+        // transform: translateY(-30%);
+      }
+    }
+    .social-card {
+      .card-img {
+        background-color: var(--color-social);
+      }
+    }
+    .selfcare-card {
+      .card-img {
+        background-color: var(--color-care);
+      }
+    }
+  }
+}
+.profile-card {
+  grid-row: 1/3;
+  background-color: var(--color-dark-blue);
+  border-radius: 1.5rem;
+  @media screen and (max-width: 852px) {
+    grid-row: 1/2;
+  }
+  &__user {
+    padding-left: 3.2rem;
+    padding-top: 3.7rem;
+    padding-bottom: 6.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-blue);
+    @media screen and (max-width: 852px) {
+      padding: 3.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .user-img {
+      width: 7.8rem;
+      height: 7.8rem;
+      @media screen and (max-width: 852px) {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__title {
+    padding-right: 8rem;
+    font-weight: 300;
+    color: white;
+    font-size: 4rem;
+    @media screen and (max-width: 852px) {
+      padding: 0;
+      font-size: 2.4rem;
+    }
+  }
+  &__title-s {
+    font-size: 1.5rem;
+    color: var(--color-pale-blue);
+  }
+  &__menu {
+    padding-bottom: 2.1rem;
+    list-style-type: none;
+    color: var(--color-desaturated-blue);
+    font-size: 1.8rem;
+    @media screen and (max-width: 852px) {
+      // padding: 2rem 2rem 2.5rem 2.5rem;
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 0 2.5rem 0;
+    }
+  }
+  &__menu-item {
+    cursor: pointer;
+    padding-bottom: 2.1rem;
+    padding-top: 2.6rem;
+    @media screen and (max-width: 852px) {
+      padding: 0;
+    }
+    &:hover {
+      color: var(--color-pale-blue);
+    }
+  }
+  &__timeframes {
+    padding-left: 3.2rem;
+    background-color: var(--color-dark-blue);
+    border-radius: 1.5rem;
+    @media screen and (max-width: 852px) {
+      padding: 0;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
