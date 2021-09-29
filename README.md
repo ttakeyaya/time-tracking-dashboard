@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/ttakeyaya/time-tracking-dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://ttakeyaya.github.io/time-tracking-dashboard/)
 
 ## My process
 
