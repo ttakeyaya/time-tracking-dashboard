@@ -1,7 +1,7 @@
 import CardComponent from "./Card.js";
 import {loadJSON, getDataBy} from "./load.js";
 
-const path = "../data.json"
+const path = "./data.json"
 const timeframeMenu = document.querySelector('.profile-card__menu');
 const cardContainer = document.querySelector('.dashboard');
 
