@@ -27,11 +27,6 @@ timeframeMenu.addEventListener('click', (e) =>{
     }
   });
 
-  // change the color of the chosen timeframe;
-  // Array.from(cardContainer.children).forEach(elem => {
-  //   elem.style.color = "white";
-  // });
-  console.log(timeframeMenu.children);
   Array.from(timeframeMenu.children).forEach(child => {
     child.style.color = "hsl(235, 45%, 61%)";
   })
